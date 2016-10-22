@@ -102,7 +102,7 @@ module.exports = {
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"form-group\">\n  <label class=\"sr-only\" for=\"post-title\">Title</label>\n  <input type=\"text\" class=\"form-control\" id=\"post-title\" placeholder=\"Title\" required=\"true\" data-error=\"Your post needs a title.\">\n  <div class=\"help-block with-errors\"></div>\n</div>\n\n<div class=\"form-group\">\n  <label class=\"sr-only\" for=\"post-body\">Body</label>\n  <textarea id=\"post-body\" class=\"form-control vresize\" rows=\"3\" placeholder=\"body\" required=\"true\" data-warning=\"Your post needs a body.\"></textarea>\n  <div class=\"help-block with-errors\"></div>\n</div>\n\n<button type=\"submit\" class=\"btn btn-default\">Submit</button>\n";
+    return "<div class=\"form-group\">\n  <label class=\"sr-only\" for=\"post-title\">Title</label>\n  <input type=\"text\" class=\"form-control\" id=\"post-title\" placeholder=\"Title\" required=\"true\" data-error=\"Your post needs a title.\">\n  <div class=\"help-block with-errors\"></div>\n</div>\n\n<div class=\"form-group\">\n  <label class=\"sr-only\" for=\"post-body\">Body</label>\n  <textarea id=\"post-body\" class=\"form-control vresize\" rows=\"3\" placeholder=\"body\" required=\"true\" data-warning=\"Your post needs a body.\"></textarea>\n  <div class=\"help-block with-errors\"></div>\n</div>\n\n<button type=\"submit\" class=\"btn btn-default\">Post</button>\n";
 },"useData":true});
 
 },{"hbsfy/runtime":26}],6:[function(require,module,exports){
