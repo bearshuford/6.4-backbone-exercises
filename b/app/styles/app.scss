@@ -5,6 +5,10 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
+$breakpoint-tablet: 768px;
+// @media (min-width: $breakpoint-tablet) {
+//
+// }
 
 *,
 *::before,
@@ -14,4 +18,49 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 img {
   max-width: 100%;
+}
+
+#app{
+  padding-top:20px;
+  margin-top:20px;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+form{
+  *{
+    border-radius: 0 !important;
+  }
+  .row{
+    margin-bottom: 10px;
+  }
+}
+
+// http://stackoverflow.com/a/5780261
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+
+.form-group{
+  @media (min-width: $breakpoint-tablet) {
+      padding:3px;
+      margin:0;
+
+    .form-group{
+      padding-left: 0px;
+      padding-right: 6px;
+    }
+  }
+}
+
+
+
+
+select#city{
+  @media (min-width: $breakpoint-tablet) {
+     max-width: 60px !important;
+  }
+
 }
